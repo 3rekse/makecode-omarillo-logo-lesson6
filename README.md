@@ -1,12 +1,12 @@
 ### @explicitHints true
 
-# Turtle Logo - Lesson #5
+# Turtle Logo - Lesson #6
 
-## Turtle Logo - Lesson #5 @unplugged
+## Turtle Logo - Lesson #6 @unplugged
 **Making the Turtle's Pen Move Up and Down.**
 
-In this lesson you will make the **Turtle** lift it's pen up and down.
-![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5/raw/main/assets/pen_up_screenshot.png)
+In this lesson you will learn to use loops, to make your code more efficient.
+![loop](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/looping_screenshot.png)
 
 ## Step 1
 ** Follow Along**
@@ -19,84 +19,112 @@ turtle.showTurtle()
 ## Step 2
 ** Follow Along**
 
-Previously we have learned how to make the **Turtle** move around the game console and leave a trail. But sometimes we might not want to leave a trail, then what?
+You know from previous lessons how to move forwards and then turn.
 ```blocks
 turtle.showTurtle()
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 ```
 
 ## Step 3
-** Follow Along**
+**Try it out**
 
-To solve this problem you use the ⇢set turtle's pen up⇠ block. As the name implies, it lifts the **Turtle's** pen up
-```blocks
-turtle.showTurtle()
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
-turtle.pen(TurtlePenMode.Up)
-```
+If I asked you to draw a square, what would you do?
+
+Try out some solutions.
+![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/looping_screenshot.png)
 
 ## Step 4
 ** Follow Along**
 
-Once the pen is up, if you move again no trail will be left behind.
+Most likely you can up with something like this.
 ```blocks
 turtle.showTurtle()
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
-turtle.pen(TurtlePenMode.Up)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 ```
 
 ## Step 5
-** Follow Along**
+** Did you know**
 
-You can also use the ⇢set turtle's pen up⇠ block again, and change the "up" to "down" to make it leave a trail again.
+When you look at the previous solution, you will notice that the same 2 block were repeated 4 times. In programming this is **a really bad idea**. Repeating yourself encourages errors in your code and is hard to change things if needed to.
 ```blocks
-turtle.showTurtle()
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 turtle.pen(TurtlePenMode.Up)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
-turtle.pen(TurtlePenMode.Down)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 ```
-## Step 6
-** Try it Out**
 
-Now try moving the **Turtle** some different distances, different directions, turning, changing color and lifting it's pen up and down.
+## Step 6
+** Did you know**
+
+What we do instead is use a new block, the ⇢``repeat 4 times, do``⇠ block. It is under the "Loops" menu. 
 ```blocks
 turtle.showTurtle()
-turtle.setPenColor(8)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
-turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
-turtle.pen(TurtlePenMode.Up)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 50)
-turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Left, 90)
-turtle.setPenColor(7)
-turtle.pen(TurtlePenMode.Down)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+for (let index = 0; index < 4; index++) {
+}
 ```
 
 ## Step 7
-**Success!**
+** Follow Along**
 
-You can now change get the **Turtle** to lift the pen up and down.
+Notice that there is a space inside the block. You can place other blocks in there. Since it has the number "4", any blocks inside it will be executed 4 times. You can always change the 4 to whatever number you would like. 
+```blocks
+turtle.showTurtle()
+for (let index = 0; index < 4; index++) {
+}
+```
 
 ## Step 8
-**Your Turn**
+** Follow Along**
 
-Get your **Turtle** to:
-- move
-- change its trail color
-- turn
-- lift the pen up
-- move again
-- put the pen down
-- move again
-- then say, "I can lift my pen!"
+So you can now take your 2 blocks that repeated 4 times and place them inside the ⇢``repeat 4 times, do``⇠ block. This produces a much simpler and easier to maintain program. 
+```blocks
+turtle.showTurtle()
+for (let index = 0; index < 4; index++) {
+    turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+    turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
+}
+```
 
 ## Step 9
+** Try it Out**
+
+You can use the previous example to draw a circle! If you turn a small amount of degrees many times over, you will eventually end up back where you started. The first 7 blocks just move the **Turtle** to not be in the center of the screen.
+```blocks
+turtle.showTurtle()
+turtle.pen(TurtlePenMode.Up)
+turtle.moveTurtleDirection(TurtleDirection.Backward, 7)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Left, 90)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 40)
+turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
+turtle.pen(TurtlePenMode.Down)
+turtle.setPenColor(2)
+for (let index = 0; index < 120; index++) {
+    turtle.moveTurtleDirection(TurtleDirection.Forward, 2)
+    turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 3)
+}
+```
+
+## Step 10
+**Success!**
+
+You can now use loops, to make your code more efficient.
+
+## Step 11
+**Your Turn**
+
+Get your **Turtle** to draw a red octagon (a stop sign). Remember an octagon has 8 sides and the angles are 45°.
+![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/octagon_screenshot.png)
+
+## Step 12
 **Done**
 
-You have successfully completed your fifth lesson in Turtle Logo.
+You have successfully completed your six lesson in Turtle Logo.
 
 ```ghost
 turtle.say("Hello, World!")
