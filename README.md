@@ -3,7 +3,7 @@
 # Turtle Logo - Lesson #6
 
 ## Turtle Logo - Lesson #6 @unplugged
-**Making the Turtle's Pen Move Up and Down.**
+**Making the Turtle's do Loops.**
 
 In this lesson you will learn to use loops, to make your code more efficient.
 ![loop](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/looping_screenshot.png)
@@ -64,7 +64,6 @@ turtle.pen(TurtlePenMode.Up)
 
 What we do instead is use a new block, the ⇢``repeat 4 times, do``⇠ block. It is under the "Loops" menu. 
 ```blocks
-turtle.showTurtle()
 for (let index = 0; index < 4; index++) {
 }
 ```
@@ -72,7 +71,7 @@ for (let index = 0; index < 4; index++) {
 ## Step 7
 ** Follow Along**
 
-Notice that there is a space inside the block. You can place other blocks in there. Since it has the number "4", any blocks inside it will be executed 4 times. You can always change the 4 to whatever number you would like. 
+Notice that there is a space inside the block. You can place other blocks in there. Since it has the number "4", any code blocks inside it will be executed 4 times. You can always change the 4 to whatever number you would like. 
 ```blocks
 turtle.showTurtle()
 for (let index = 0; index < 4; index++) {
@@ -118,7 +117,7 @@ You can now use loops, to make your code more efficient.
 ## Step 11
 **Your Turn**
 
-Get your **Turtle** to draw a red octagon (a stop sign). Remember an octagon has 8 sides and the angles are 45°.
+Get your **Turtle** to draw a red octagon (a stop sign). Remember in a regular octagon there 8 sides and all the angles are 45°.
 ![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/octagon_screenshot.png)
 
 ## Step 12
