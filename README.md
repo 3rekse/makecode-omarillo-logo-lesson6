@@ -53,7 +53,7 @@ turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 ## Step 5
 ** Did you know**
 
-When you look at the previous solution, you will notice that the same 2 block were repeated 4 times. In programming this is **a really bad idea**. Repeating yourself encourages errors in your code and is hard to change things if needed to.
+When you look at the previous solution, you will notice that the same 2 block were repeated 4 times. In programming this is **a really bad idea**. Repeating yourself encourages errors in your code and is hard to change things if needed.
 ```blocks
 turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
 turtle.pen(TurtlePenMode.Up)
@@ -102,7 +102,7 @@ turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Left, 90)
 turtle.moveTurtleDirection(TurtleDirection.Forward, 40)
 turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 turtle.pen(TurtlePenMode.Down)
-turtle.setPenColor(2)
+turtle.setPenColor(8)
 for (let index = 0; index < 120; index++) {
     turtle.moveTurtleDirection(TurtleDirection.Forward, 2)
     turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 3)
