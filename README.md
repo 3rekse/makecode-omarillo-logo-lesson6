@@ -123,7 +123,7 @@ Get your **Turtle** to draw a red octagon (a stop sign). Remember in a regular o
 ## Step 12
 **Done**
 
-You have successfully completed your six lesson in Turtle Logo.
+You have successfully completed your sixth lesson in Turtle Logo.
 
 ```ghost
 turtle.say("Hello, World!")
