@@ -65,7 +65,7 @@ You know from previous lessons how to move forwards and then turn 90°.
 ```blocks
 turtle.showTurtle()
 turtle.setPositionCartesian(-40, 40)
-turtle.moveTurtleDirection(TurtleDirection.Forward, 25)
+turtle.moveTurtleDirection(TurtleDirection.Forward, 80)
 turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 ```
 
