@@ -136,18 +136,18 @@ for (let index = 0; index < 4; index++) {
 }
 ```
 
-## Step 10
+## Step 12
 **Success!**
 
 You can now use loops, to make your code more efficient.
 
-## Step 11
+## Step 13
 **Your Turn**
 
 Get your **Turtle** to draw a red octagon (a stop sign). Remember in a regular octagon there 8 sides and all the angles are 45°. You might need to decrease the step size and also change the starting position of the **Turtle**, to make the octagon fit the screen.
 ![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/octagon_screenshot.png)
 
-## Step 12
+## Step 14
 **Done**
 
 You have successfully completed your sixth lesson in Turtle Logo.
