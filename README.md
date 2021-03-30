@@ -73,9 +73,8 @@ turtle.turnTurtleDirectionByDegrees(TurtleTurnDirection.Right, 90)
 **Try it out**
 
 If I asked you to draw a square, what would you do?
-
-Pause and try out some solutions.
 ![loop](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6/raw/main/assets/looping_screenshot.png)
+Pause and try out some solutions.
 
 ## Step 7
 ** Follow Along**
