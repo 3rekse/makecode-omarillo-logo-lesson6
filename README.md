@@ -153,4 +153,5 @@ You have successfully completed your sixth lesson in Turtle Logo.
 
 ```ghost
 turtle.say("Hello, World!")
+turtle.setPenColor(1)
 ```
